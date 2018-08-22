@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success> 
+    <operations>
+      <li Class="PatchOperationReplace"> 
+        <xpath>*/ThingDef[defName = "Battery"]/label</xpath>
+        <value>
+          <label>steel battery</label>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Battery"]</xpath>
+		<value>
+			<designatorDropdown>Batteries</designatorDropdown>
+		</value>
+	</Operation>
+	
+</Patch>
