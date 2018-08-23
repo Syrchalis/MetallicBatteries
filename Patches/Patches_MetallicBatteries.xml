@@ -20,4 +20,14 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Battery"]/costList</xpath>
+		<value>
+			<costList>
+			  <Steel>80</Steel>
+			  <ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+	
 </Patch>

@@ -45,13 +45,71 @@
     <costList>
       <Silver>200</Silver>
       <Steel>70</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>900</storedEnergyMax>
+        <efficiency>0.7</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Batteries</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Battery_Gold</defName>
+    <label>golden battery</label>
+    <thingClass>Building_Battery</thingClass>
+    <designatorDropdown>Batteries</designatorDropdown>
+    <graphicData>
+      <texPath>Things/Building/Power/Battery_Gold</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>1</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>-40</Beauty>
+    </statBases>
+    <description>A battery enhanced with gold for optimal efficiency that can store 900 Wd of power at 100% efficiency. Does not short-circuit in rain.</description>
+    <size>(1,2)</size>
+    <costList>
+      <Gold>30</Gold>
+      <Steel>70</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
         <storedEnergyMax>900</storedEnergyMax>
-        <efficiency>0.75</efficiency>
-        <shortCircuitInRain>true</shortCircuitInRain>
+        <efficiency>1.0</efficiency>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -104,70 +162,12 @@
     <costList>
       <Plasteel>50</Plasteel>
       <Steel>70</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
-        <storedEnergyMax>1500</storedEnergyMax>
-        <efficiency>0.75</efficiency>
-        <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <staticSunShadowHeight>0.2</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
-    <researchPrerequisites>
-      <li>Batteries</li>
-    </researchPrerequisites>
-  </ThingDef>
-  
-  <ThingDef ParentName="BuildingBase">
-    <defName>Battery_Gold</defName>
-    <label>golden battery</label>
-    <thingClass>Building_Battery</thingClass>
-    <designatorDropdown>Batteries</designatorDropdown>
-    <graphicData>
-      <texPath>Things/Building/Power/Battery_Gold</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,3)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.40</fillPercent>
-    <tickerType>Normal</tickerType>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories>
-      <li>BuildingsPower</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>800</WorkToBuild>
-      <Mass>1</Mass>
-      <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
-    </statBases>
-    <description>A battery enhanced with gold for optimal efficiency that can store 900 Wd of power at 100% efficiency. Does not short-circuit in rain.</description>
-    <size>(1,2)</size>
-    <costList>
-      <Gold>50</Gold>
-      <Steel>70</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Battery">
-        <storedEnergyMax>1200</storedEnergyMax>
-        <efficiency>1.0</efficiency>
+        <storedEnergyMax>1800</storedEnergyMax>
+        <efficiency>0.7</efficiency>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -218,7 +218,7 @@
     <description>A battery enhanced with uranium for improved capacity and efficiency that can store 1200 Wd of power at 90% efficiency. Does not short-circuit in rain.</description>
     <size>(1,2)</size>
     <costList>
-      <Uranium>80</Uranium>
+      <Uranium>70</Uranium>
       <Steel>70</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
@@ -276,8 +276,8 @@
     <description>A battery enhanced with advanced components and expensive metals for optimal capacity and efficiency that can store 1800 Wd of power at 100% efficiency. Does not short-circuit in rain. Does not break down or need maintenance.</description>
     <size>(1,2)</size>
     <costList>
-      <Uranium>50</Uranium>
-      <Gold>30</Gold>
+      <Uranium>40</Uranium>
+      <Gold>20</Gold>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <comps>
