@@ -38,7 +38,7 @@
       <WorkToBuild>800</WorkToBuild>
       <Mass>1</Mass>
       <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <description>A battery enhanced with silver for improved capacity and efficiency that can store 900 Wd of power at 75% efficiency. Can short-circuit in rain.</description>
     <size>(1,2)</size>
@@ -97,7 +97,7 @@
       <WorkToBuild>800</WorkToBuild>
       <Mass>1</Mass>
       <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
+      <Beauty>20</Beauty>
     </statBases>
     <description>A battery enhanced with gold for optimal efficiency that can store 900 Wd of power at 100% efficiency. Does not short-circuit in rain.</description>
     <size>(1,2)</size>
@@ -155,7 +155,7 @@
       <WorkToBuild>800</WorkToBuild>
       <Mass>1</Mass>
       <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <description>A battery enhanced with plasteel for optimal capacity that can store 1500 Wd of power at 75% efficiency. Does not short-circuit in rain.</description>
     <size>(1,2)</size>
@@ -213,7 +213,7 @@
       <WorkToBuild>800</WorkToBuild>
       <Mass>1</Mass>
       <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <description>A battery enhanced with uranium for improved capacity and efficiency that can store 1200 Wd of power at 90% efficiency. Does not short-circuit in rain.</description>
     <size>(1,2)</size>
@@ -271,7 +271,7 @@
       <WorkToBuild>800</WorkToBuild>
       <Mass>1</Mass>
       <Flammability>1.0</Flammability>
-      <Beauty>-40</Beauty>
+      <Beauty>0</Beauty>
     </statBases>
     <description>A battery enhanced with advanced components and expensive metals for optimal capacity and efficiency that can store 1800 Wd of power at 100% efficiency. Does not short-circuit in rain. Does not break down or need maintenance.</description>
     <size>(1,2)</size>
