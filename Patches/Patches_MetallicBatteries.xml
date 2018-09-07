@@ -30,4 +30,11 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Battery"]/statBases/Mass</xpath>
+		<value>
+			<Mass>5</Mass>
+		</value>
+	</Operation>
+	
 </Patch>
