@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System.Linq;
 using System.Text;
 using UnityEngine;
@@ -22,7 +22,7 @@ namespace MetallicBatteries
             MethodInfo MatColor = AccessTools.Method(typeof(Building_BatteryPatch), nameof(GetMatColor));
             foreach (CodeInstruction i in instructions)
             {
-                if (i.opcode == OpCodes.Ldsfld && i.operand == BatteryBarFilledMat)
+                if (i.opcode == OpCodes.Ldsfld && (FieldInfo)i.operand == BatteryBarFilledMat)
                 {
                     //yield return new CodeInstruction(instructions.ElementAt(5));
                     yield return new CodeInstruction(OpCodes.Ldloc_0);

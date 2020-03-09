@@ -2,4 +2,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MetallicBatterie
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MetallicBatteries\Source\MetallicBatteries\obj\Release\MetallicBatteries.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MetallicBatteries\Source\MetallicBatteries\obj\Release\MetallicBatteries.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MetallicBatteries\Source\MetallicBatteries\obj\Release\MetallicBatteries.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MetallicBatteries\Source\MetallicBatteries\obj\Release\MetallicBatteries.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MetallicBatteries\1.1\Assemblies\MetallicBatteries.dll

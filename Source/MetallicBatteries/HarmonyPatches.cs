@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,7 @@ namespace MetallicBatteries
     {
         static HarmonyPatches()
         {
-            var harmony = HarmonyInstance.Create("Syrchalis.Rimworld.MetallicBatteries");
+            var harmony = new Harmony("Syrchalis.Rimworld.MetallicBatteries");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
