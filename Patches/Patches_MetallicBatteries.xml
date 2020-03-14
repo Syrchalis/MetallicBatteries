@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success> 
-    <operations>
-      <li Class="PatchOperationReplace"> 
-        <xpath>*/ThingDef[defName = "Battery"]/label</xpath>
-        <value>
-          <label>steel battery</label>
-        </value>
-      </li>
-    </operations>
-  </Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+		<li Class="PatchOperationReplace"> 
+			<xpath>*/ThingDef[defName = "Battery"]/label</xpath>
+			<value>
+			<label>steel battery</label>
+			</value>
+		</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Battery"]/description</xpath>
+		<value>
+			<description>Stores electricity for later use. Steel batteries will short-circuit in rain, can break down, but generate no heat.</description>
+		</value>
+	</Operation>
   
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName = "Battery"]</xpath>
@@ -19,21 +26,26 @@
 			<designatorDropdown>Batteries</designatorDropdown>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Battery"]/comps/li[@Class="CompProperties_Battery"]</xpath>
+		<value>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>750</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Battery"]/costList</xpath>
 		<value>
 			<costList>
-			  <Steel>80</Steel>
-			  <ComponentIndustrial>1</ComponentIndustrial>
+			  <Steel>100</Steel>
+			  <ComponentIndustrial>2</ComponentIndustrial>
 			</costList>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName = "Battery"]/statBases/Mass</xpath>
-		<value>
-			<Mass>5</Mass>
 		</value>
 	</Operation>
 	

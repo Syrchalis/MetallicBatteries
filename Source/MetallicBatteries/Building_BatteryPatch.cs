@@ -39,4 +39,30 @@ namespace MetallicBatteries
             return SolidColorMaterials.SimpleSolidColorMaterial(new Color(GenMath.LerpDouble(0.5f, 1f, 1f, 0f, fillPercent), GenMath.LerpDouble(0f, 0.5f, 0f, 1f, fillPercent), 0.2f), false);
         }
     }
+
+    [HarmonyPatch(typeof(CompPowerBattery), nameof(CompPowerBattery.AddEnergy))]
+    public static class AddEnergyPatch
+    {
+        [HarmonyPrefix]
+        public static void AddEnergy_Prefix(ref float amount, CompPowerBattery __instance)
+        {
+            if (__instance?.parent?.def != null && __instance.parent.def == MetallicBatteriesDefOf.Battery_Uranium)
+            {
+                amount *= Mathf.InverseLerp(80f, 20f, __instance.parent.AmbientTemperature);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(CompPowerBattery), nameof(CompPowerBattery.CompInspectStringExtra))]
+    public static class CompInspectStringExtraPatch
+    {
+        [HarmonyPostfix]
+        public static void CompInspectStringExtra_Postfix(ref string __result, CompPowerBattery __instance)
+        {
+            if (__instance?.parent?.def != null && __instance.parent.def == MetallicBatteriesDefOf.Battery_Uranium)
+            {
+                __result += "\n" + "PowerBatteryHeatLoss".Translate() + ": " + (__instance.Props.efficiency * 100f * Mathf.InverseLerp(80f, 20f, __instance.parent.AmbientTemperature)).ToString("F0") + "%";
+            }
+        }
+    }
 }
