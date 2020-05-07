@@ -124,7 +124,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
-        <storedEnergyMax>900</storedEnergyMax>
+        <storedEnergyMax>750</storedEnergyMax>
         <efficiency>0.9</efficiency>
         <transmitsPower>true</transmitsPower>
       </li>
@@ -380,7 +380,7 @@
       <Mass>10</Mass>
       <Flammability>0.0</Flammability>
       <Beauty>0</Beauty>
-      <MarketValue>2500</MarketValue>
+      <MarketValue>1200</MarketValue>
     </statBases>
     <description>A battery developed by archotechs. It is believed it stores energy in the quantum foam and can extract it from there without any loss. Vanometric batteries will not short-circuit in rain, not break down, and generate no heat.\n\nCapacity: 2500 Wd\nEfficiency: 100%</description>
     <descriptionHyperlinks>
