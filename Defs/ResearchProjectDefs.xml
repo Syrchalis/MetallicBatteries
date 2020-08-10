@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MetallicBatteriesImproved</defName>
+    <label>improved battery</label>
+    <description>Build silver batteries for storing electricity more efficiently.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Batteries</li>
+    </prerequisites>
+    <researchViewX>6.50</researchViewX>
+    <researchViewY>1.20</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MetallicBatteriesSpecialized</defName>
+    <label>specialized batteries</label>
+    <description>Build specialized batteries to get the most out of specific attributes.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MetallicBatteriesImproved</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>1.20</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

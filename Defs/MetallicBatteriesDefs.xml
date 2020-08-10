@@ -69,7 +69,7 @@
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>Batteries</li>
+      <li>MetallicBatteriesImproved</li>
     </researchPrerequisites>
   </ThingDef>
   
@@ -135,7 +135,7 @@
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>Batteries</li>
+      <li>MetallicBatteriesSpecialized</li>
     </researchPrerequisites>
   </ThingDef>
   
@@ -200,7 +200,7 @@
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>Batteries</li>
+      <li>MetallicBatteriesSpecialized</li>
     </researchPrerequisites>
   </ThingDef>
   
@@ -278,7 +278,7 @@
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>Batteries</li>
+      <li>MetallicBatteriesSpecialized</li>
     </researchPrerequisites>
   </ThingDef>
   
@@ -343,7 +343,7 @@
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>Batteries</li>
+      <li>MetallicBatteriesSpecialized</li>
     </researchPrerequisites>
   </ThingDef>
 

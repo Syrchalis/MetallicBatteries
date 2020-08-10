@@ -19,6 +19,13 @@
 			<description>Stores electricity for later use. Steel batteries will short-circuit in rain, can break down, but generate no heat.</description>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName = "Batteries"]/label</xpath>
+		<value>
+			<label>basic battery</label>
+		</value>
+	</Operation>
   
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName = "Battery"]</xpath>
