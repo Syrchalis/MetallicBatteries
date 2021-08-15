@@ -65,14 +65,16 @@ namespace MetallicBatteries
     [UsedImplicitly]
     public static class CompPowerBatteryPatches
     {
+        [HarmonyPatch(nameof(CompPowerBattery.AddEnergy))]
         [HarmonyPrefix]
         [UsedImplicitly]
-        public static void Prefix(ref float amount, [CanBeNull] CompPowerBattery __instance)
+        public static void AddEnergy_Prefix(ref float amount, [CanBeNull] CompPowerBattery __instance)
         {
             if (__instance?.parent?.def != null && __instance.parent.def == MetallicBatteriesDefOf.Battery_Uranium)
                 amount *= Mathf.InverseLerp(80f, 20f, __instance.parent.AmbientTemperature);
         }
 
+        [HarmonyPatch(nameof(CompPowerBattery.CompInspectStringExtra))]
         [HarmonyPostfix]
         [UsedImplicitly]
         public static void CompInspectStringExtra_Postfix(ref string __result, [CanBeNull] CompPowerBattery __instance)
